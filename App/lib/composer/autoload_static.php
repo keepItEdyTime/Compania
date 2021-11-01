@@ -4,12 +4,16 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7e44f9dc1adccb75fa4ffffed392cc85
+class ComposerStaticInit8620c92db84a6ad9d26f0719c3c7359c
 {
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
             'Svg\\' => 4,
+        ),
+        'M' => 
+        array (
+            'MyApp\\' => 6,
         ),
         'F' => 
         array (
@@ -25,6 +29,10 @@ class ComposerStaticInit7e44f9dc1adccb75fa4ffffed392cc85
         'Svg\\' => 
         array (
             0 => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg',
+        ),
+        'MyApp\\' => 
+        array (
+            0 => __DIR__ . '/../../..' . '/App',
         ),
         'FontLib\\' => 
         array (
@@ -59,10 +67,10 @@ class ComposerStaticInit7e44f9dc1adccb75fa4ffffed392cc85
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit7e44f9dc1adccb75fa4ffffed392cc85::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit7e44f9dc1adccb75fa4ffffed392cc85::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit7e44f9dc1adccb75fa4ffffed392cc85::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit7e44f9dc1adccb75fa4ffffed392cc85::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit8620c92db84a6ad9d26f0719c3c7359c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit8620c92db84a6ad9d26f0719c3c7359c::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit8620c92db84a6ad9d26f0719c3c7359c::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit8620c92db84a6ad9d26f0719c3c7359c::$classMap;
 
         }, null, ClassLoader::class);
     }
